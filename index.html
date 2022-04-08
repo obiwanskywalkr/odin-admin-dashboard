@@ -4,164 +4,194 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
     <link rel="stylesheet" href="./style.css">
     <title>Dashboard</title>
 </head>
 <body>
-     <div class="header">
-        <div class="search-container">
-            <a href=""><img id="search-icon" src="./images/search.svg" alt="Search"></a>
-            <input type="text" name="search" id="searchbar">
-        </div>
-        <div class="account-container">
-            <a href=""><img id="notification" src="./images/notification.svg" alt="Notifications"></a>
-            <img src="" alt="Profile Picture">
-            <h2>Account Name</h2>
-        </div>
-        <div class="greeting-container">
-            <img src="" alt="Profile Picture">
-            <div class="greet-text-container">
-                <h3>Hi there,</h3>
-                <h1>Account Name (@test)</h1>
+    <div class="main-container">
+        <div class="header">
+            <div class="search-container">
+                <label for="search">
+                    <a href=""><img id="search-icon" src="./images/search.svg" alt="Search"></a>
+                </label>
+                <input type="text" name="search" id="searchbar">
             </div>
-        </div>
-        <div class="header-buttons-container">
-            <button class="tool-button" id="new">New</button>
-            <button class="tool-button" id="upload">Upload</button
-            ><button class="tool-button" id="share">Share</button>
-        </div>
-    </div>
-    <div class="sidebar">
-        <div class="sidebar-head">
-            <img src="./images/icon-cat.png" alt="Cat">
-            <h1>Dashboard</h1>
-        </div>
-        <ul>
-            <li class="sidebar-link">
-                <a href=""><img src="./images/home.svg" alt="Home">Home</a>
-            </li>
-            <li class="sidebar-link">
-                <a href=""><img src="./images/profile.svg" alt="Profile">Profile</a>
-            </li>
-            <li class="sidebar-link">
-                <a href=""><img src="./images/message.svg" alt="Messages">Messages</a>
-            </li>
-            <li class="sidebar-link">
-                <a href=""><img src="./images/history.svg" alt="History">History</a>
-            </li>
-            <li class="sidebar-link">
-                <a href=""><img src="./images/task.svg" alt="Tasks">Tasks</a>
-            </li>
-            <li class="sidebar-link">
-                <a href=""><img src="./images/communities.svg" alt="Communities">Communities</a>
-            </li>
-            <li class="sidebar-link">
-                <a href=""><img src="./images/settings.svg" alt="Settings">Settings</a>
-            </li>
-            <li class="sidebar-link">
-                <a href=""><img src="./images/support.svg" alt="Support">Support</a>
-            </li>
-            <li class="sidebar-link">
-                <a href=""><img src="./images/privacy.svg" alt="Privacy">Privacy</a>
-            </li>
-        </ul>
-    </div>
-    <div class="content">
-        <div class="project-container">
-            <h1>Your Projects</h1>
-            <div class="card">
-                <h2 class="project-title">Placeholder</h2>
-                <p class="project-description">Lorem ipsum...</p>
-                <div class="card-tools">
-                    <a href=""><img src="./images/star.svg" alt="Star"></a>
-                    <a href=""><img src="./images/view.svg" alt="View"></a> 
-                    <a href=""><img src="./images/fork.svg" alt="Fork"></a>
+            <div class="profile-info-container">
+                <a href=""><img id="notification" src="./images/notification.svg" alt="Notifications"></a>
+                <img class="profile-picture" src="./images/profile-picture.jpeg" alt="Profile Picture">
+                <h4>fastcat</h4>
+            </div>
+            <div class="greeting-container">
+                <img class="profile-picture-large" src="./images/profile-picture.jpeg" alt="Profile Picture">
+                <div class="greeting">
+                    <h5>Hi there,</h5>
+                    <h3>Whiskers (@fastcat)</h3>
                 </div>
             </div>
-            <div class="card">
-                <h2 class="project-title">Placeholder</h2>
-                <p class="project-description">Lorem ipsum...</p>
-                <div class="card-tools">
-                    <a href=""><img src="./images/star.svg" alt="Star"></a>
-                    <a href=""><img src="./images/view.svg" alt="View"></a> 
-                    <a href=""><img src="./images/fork.svg" alt="Fork"></a>
-                </div>
-            </div>
-            <div class="card">
-                <h2 class="project-title">Placeholder</h2>
-                <p class="project-description">Lorem ipsum...</p>
-                <div class="card-tools">
-                    <a href=""><img src="./images/star.svg" alt="Star"></a>
-                    <a href=""><img src="./images/view.svg" alt="View"></a> 
-                    <a href=""><img src="./images/fork.svg" alt="Fork"></a>
-                </div>
-            </div>
-            <div class="card">
-                <h2 class="project-title">Placeholder</h2>
-                <p class="project-description">Lorem ipsum...</p>
-                <div class="card-tools">
-                    <a href=""><img src="./images/star.svg" alt="Star"></a>
-                    <a href=""><img src="./images/view.svg" alt="View"></a> 
-                    <a href=""><img src="./images/fork.svg" alt="Fork"></a>
-                </div>
-            </div>
-            <div class="card">
-                <h2 class="project-title">Placeholder</h2>
-                <p class="project-description">Lorem ipsum...</p>
-                <div class="card-tools">
-                    <a href=""><img src="./images/star.svg" alt="Star"></a>
-                    <a href=""><img src="./images/view.svg" alt="View"></a> 
-                    <a href=""><img src="./images/fork.svg" alt="Fork"></a>
-                </div>
-            </div>
-            <div class="card">
-                <h2 class="project-title">Placeholder</h2>
-                <p class="project-description">Lorem ipsum...</p>
-                <div class="card-tools">
-                    <a href=""><img src="./images/star.svg" alt="Star"></a>
-                    <a href=""><img src="./images/view.svg" alt="View"></a> 
-                    <a href=""><img src="./images/fork.svg" alt="Fork"></a>
-                </div>
+            <div class="primary-tool-container">
+                <button class="tool-button" id="new">New</button>
+                <button class="tool-button" id="upload">Upload</button>
+                <button class="tool-button" id="share">Share</button>
             </div>
         </div>
-        <div class="announcements-container">
-            <h1>Announcements</h1>
-            <div class="annoucement">
-                <h3 class="announcement-title">Placeholder</h3>
-                <p class="announcement-description"> Lorem ipsum...</p>
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img class="fastcat-icon" src="./images/icon-cat.png" alt="Cat">
+                <h2>Dashboard</h2>
             </div>
-            <div class="annoucement">
-                <h3 class="announcement-title">Placeholder</h3>
-                <p class="announcement-description"> Lorem ipsum...</p>
-            </div>
-            <div class="annoucement">
-                <h3 class="announcement-title">Placeholder</h3>
-                <p class="announcement-description"> Lorem ipsum...</p>
-            </div>
+            <ul class="sidebar-link-container">
+                <li class="sidebar-link">
+                    <img class="icon" src="./images/home.svg" alt="Home">
+                    <a href="">Home</a>
+                </li>
+                <li class="sidebar-link">
+                    <img class="icon" src="./images/profile.svg" alt="Profile">
+                    <a href="">Profile</a>
+                </li>
+                <li class="sidebar-link">
+                    <img class="icon" src="./images/message.svg" alt="Messages">
+                    <a href="">Messages</a>
+                </li>
+                <li class="sidebar-link">
+                    <img class="icon" src="./images/history.svg" alt="History">
+                    <a href="">History</a>
+                </li>
+                <li class="sidebar-link">
+                    <img class="icon" src="./images/task.svg" alt="Tasks">
+                    <a href="">Tasks</a>
+                </li>
+                <li class="sidebar-link">
+                    <img class="icon" src="./images/communities.svg" alt="Communities">
+                    <a href="">Communities</a>
+                </li>
+                <li class="sidebar-link">
+                    <img class="icon" src="./images/settings.svg" alt="Settings">
+                    <a href="">Settings</a>
+                </li>
+                <li class="sidebar-link">
+                    <img class="icon" src="./images/support.svg" alt="Support">
+                    <a href="">Support</a>
+                </li>
+                <li class="sidebar-link">
+                    <img class="icon" src="./images/privacy.svg" alt="Privacy">
+                    <a href="">Privacy</a>
+                </li>
+            </ul>
         </div>
-        <div class="trending-container">
-            <h1>Trending</h1>
-            <div class="trend">
-                <img src="" alt="Profile Picture">
-                <h4 class="profile-name">@test</h4>
-                <p class="project-name">Placeholder</p>
+        <div class="content">
+            <div class="project-container">
+                <h2>Your Projects</h2>
+                <div class="card">
+                    <h3 class="project-title">Project Placeholder</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis urna. Gravida cum sociis natoque penatibus et. Lectus magna fringilla urna porttitor. Tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    <div class="card-tool-container">
+                        <a href=""><img class="card-tool" src="./images/star.svg" alt="Star"></a>
+                        <a href=""><img class="card-tool" src="./images/view.svg" alt="View"></a> 
+                        <a href=""><img class="card-tool" src="./images/share.svg" alt="Fork"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="project-title">Project Placeholder</h3>
+                    <p class="project-description">Imperdiet proin fermentum leo vel. Tempor id eu nisl nunc. Sit amet tellus cras adipiscing enim eu turpis. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. Velit euismod in pellentesque massa placerat duis ultricies lacus. Molestie at elementum eu facilisis sed odio morbi quis. Sed velit dignissim sodales ut.</p>
+                    <div class="card-tool-container">
+                        <a href=""><img class="card-tool" src="./images/star.svg" alt="Star"></a>
+                        <a href=""><img class="card-tool" src="./images/view.svg" alt="View"></a> 
+                        <a href=""><img class="card-tool" src="./images/share.svg" alt="Fork"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="project-title">Project Placeholder</h3>
+                    <p class="project-description">Adipiscing diam donec adipiscing tristique risus nec feugiat. Ac felis donec et odio pellentesque diam volutpat. Netus et malesuada fames ac turpis egestas maecenas. Eget mauris pharetra et ultrices neque ornare aenean euismod. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices.</p>
+                    <div class="card-tool-container">
+                        <a href=""><img class="card-tool" src="./images/star.svg" alt="Star"></a>
+                        <a href=""><img class="card-tool" src="./images/view.svg" alt="View"></a> 
+                        <a href=""><img class="card-tool" src="./images/share.svg" alt="Fork"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="project-title">Project Placeholder</h3>
+                    <p class="project-description">In egestas erat imperdiet sed euismod nisi. Duis ut diam quam nulla. Purus faucibus ornare suspendisse sed nisi. Tempor commodo ullamcorper a lacus vestibulum sed. Elementum integer enim neque volutpat ac. Dolor magna eget est lorem. Urna porttitor rhoncus dolor purus non enim.</p>
+                    <div class="card-tool-container">
+                        <a href=""><img class="card-tool" src="./images/star.svg" alt="Star"></a>
+                        <a href=""><img class="card-tool" src="./images/view.svg" alt="View"></a> 
+                        <a href=""><img class="card-tool" src="./images/share.svg" alt="Fork"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="project-title">Project Placeholder</h3>
+                    <p class="project-description">Urna id volutpat lacus laoreet non. Pharetra vel turpis nunc eget lorem dolor sed. Mattis pellentesque id nibh tortor id aliquet lectus proin nibh. Tincidunt ornare massa eget egestas. Tristique risus nec feugiat in fermentum. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt.</p>
+                    <div class="card-tool-container">
+                        <a href=""><img class="card-tool" src="./images/star.svg" alt="Star"></a>
+                        <a href=""><img class="card-tool" src="./images/view.svg" alt="View"></a> 
+                        <a href=""><img class="card-tool" src="./images/share.svg" alt="Fork"></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="project-title">Project Placeholder</h3>
+                    <p class="project-description">Ante in nibh mauris cursus mattis molestie a. Laoreet suspendisse interdum consectetur libero id. Est lorem ipsum dolor sit amet consectetur adipiscing. Gravida in fermentum et sollicitudin ac orci phasellus egestas. Iaculis eu non diam phasellus vestibulum lorem sed.</p>
+                    <div class="card-tool-container">
+                        <a href=""><img class="card-tool" src="./images/star.svg" alt="Star"></a>
+                        <a href=""><img class="card-tool" src="./images/view.svg" alt="View"></a> 
+                        <a href=""><img class="card-tool" src="./images/share.svg" alt="Fork"></a>
+                    </div>
+                </div>
             </div>
-            <div class="trend">
-                <img src="" alt="Profile Picture">
-                <h4 class="profile-name">@test</h4>
-                <p class="project-name">Placeholder</p>
+            <div class="announcement-container">
+                <h2>Announcements</h2>
+                <div class="announcement-card">
+                    <div class="announcement">
+                        <h3 class="announcement-title">Announcement</h3>
+                        <p class="announcement-description">Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore. </p>
+                    </div>
+                    <div class="announcement">
+                        <h3 class="announcement-title">Announcement</h3>
+                        <p class="announcement-description">Volutpat consequat mauris nunc congue nisi vitae suscipit.</p>
+                    </div>
+                    <div class="announcement">
+                        <h3 class="announcement-title">Announcement</h3>
+                        <p class="announcement-description">Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra.</p>
+                    </div>
+                </div>
             </div>
-            <div class="trend">
-                <img src="" alt="Profile Picture">
-                <h4 class="profile-name">@test</h4>
-                <p class="project-name">Placeholder</p>
-            </div>
-            <div class="trend">
-                <img src="" alt="Profile Picture">
-                <h4 class="profile-name">@test</h4>
-                <p class="project-name">Placeholder</p>
+            <div class="trending-container">
+                <h2>Trending</h2>
+                <div class="trend-card">
+                    <div class="trend">
+                        <img class="profile-picture" src="./images/ceo_cat.png" alt="Charlie">
+                        <div class="trend-text-container">
+                            <h4 class="profile-name">@charlie</h4>
+                            <p class="project-name">Placeholder</p>
+                        </div>
+                    </div>
+                    <div class="trend">
+                        <img class="profile-picture" src="./images/hr_cat.jpg" alt="Lucy">
+                        <div class="trend-text-container">
+                            <h4 class="profile-name">@lucy</h4>
+                            <p class="project-name">Placeholder</p>
+                        </div>                    
+                    </div>
+                    <div class="trend">
+                        <img class="profile-picture" src="./images/seniordev_cat.jpg" alt="Oliver">
+                        <div class="trend-text-container">
+                            <h4 class="profile-name">@oliver</h4>
+                            <p class="project-name">Placeholder</p>
+                        </div>
+                    </div>
+                    <div class="trend">
+                        <img class="profile-picture" src="./images/juniordev_cat.jpg" alt="Mr. Pip">
+                        <div class="trend-text-container">
+                            <h4 class="profile-name">@mr-pip</h4>
+                            <p class="project-name">Placeholder</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </body>
+<footer></footer>
 </html>
