@@ -1,3 +1,3 @@
-# odin-admin-dashboard
+# Admin Dashboard
 
-- A dashboard page built to practice using CSS Grid
+An administrative dashboard page built to practice using CSS Grid
